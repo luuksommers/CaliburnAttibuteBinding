@@ -6,8 +6,11 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <xctk:DecimalUpDown Grid.Row="0" x:Name="DecimalValue" />
+        <TextBox Grid.Row="2" x:Name="StringValue" />
     </Grid>
 </Window>

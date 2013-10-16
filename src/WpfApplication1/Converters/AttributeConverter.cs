@@ -2,14 +2,14 @@
 using System.Reflection;
 using System.Windows.Data;
 
-namespace WpfApplication1
+namespace WpfApplication1.Converters
 {
     public abstract class AttributeConverter<T> : IValueConverter
         where T : Attribute
     {
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            PropertyInfo property = parameter as PropertyInfo;
+            var property = parameter as PropertyInfo;
 
             if (property == null)
                 return new ArgumentNullException("parameter").ToString();

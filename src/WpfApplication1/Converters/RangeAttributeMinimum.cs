@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WpfApplication1
+namespace WpfApplication1.Converters
 {
-    public sealed class RangeMaximumConverter : AttributeConverter<RangeAttribute>
+    public sealed class RangeMinimumConverter : AttributeConverter<RangeAttribute>
     {
         public override object GetValueFromAttribute(RangeAttribute attribute)
         {
-            return attribute.Maximum;
+            return attribute.Minimum;
         }
     }
 }

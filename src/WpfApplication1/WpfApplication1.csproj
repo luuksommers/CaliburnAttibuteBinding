@@ -78,9 +78,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AttributeConverter.cs" />
-    <Compile Include="RangeMaximumConverter.cs" />
-    <Compile Include="RangeAttributeMinimum.cs" />
+    <Compile Include="Converters\AttributeConverter.cs" />
+    <Compile Include="Converters\MaxLengthConverter.cs" />
+    <Compile Include="Converters\RangeMaximumConverter.cs" />
+    <Compile Include="Converters\RangeAttributeMinimum.cs" />
     <Compile Include="ShellViewModel.cs" />
     <Page Include="ShellView.xaml">
       <Generator>MSBuild:Compile</Generator>
